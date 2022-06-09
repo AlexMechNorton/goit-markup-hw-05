@@ -149,6 +149,20 @@ li {
 .nav-link:focus {
   color: var(--hover-cont-link);
 }
+.item {
+  position: relative;
+}
+.nav-link.current::after {
+  position: absolute;
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--hover-cont-link);
+  border-radius: 2px;
+}
 /* Обратная связь с разработчиками */
 .connect {
   display: flex;
