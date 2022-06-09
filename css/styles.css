@@ -1,6 +1,10 @@
 :root {
   --logo-text-font: 'Raleway', sans-serif;
   --primary-font: 'Roboto', sans-serif;
+
+  --primary-letter-spacing: 0.03em;
+
+  --portfolio-bgc-hover: rgba(33, 150, 243, 0.9);
   --nohover-navlink-color: #212121;
   --hover-cont-link: #2196f3;
   --primary-text-color: #757575;
@@ -9,15 +13,19 @@
   --title-text-color: #212121;
   --accent-bg-color: #ffffff;
   --hero-bg-color: #c4c4c4;
+
   --team-section-bgcolor: #f5f4fa;
   --team-social-link: #afb1b8;
   --team-social-link-hover: #ffffff;
   --team-soc-bg-hover: #2196f3;
+
   --customers-color: #afb1b8;
   --customers-hover-color: #2196f3;
+
   --footer-title: #ffffff;
   --fsocial-icon-color: #ffffff;
   --fsocial-link-hover: #2196f3;
+
   --backdrop-bgc: rgba(0, 0, 0, 0.2);
   --white-bgc: #ffffff;
 
@@ -57,7 +65,7 @@ li {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
 }
 .button {
   font-family: inherit;
@@ -240,7 +248,7 @@ li {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   text-transform: uppercase;
   color: var(--footer-title);
   margin-bottom: 20px;
@@ -390,7 +398,7 @@ li {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
@@ -412,6 +420,31 @@ li {
 }
 .service-item + .service-item {
   margin-left: 30px;
+}
+.service-item {
+  position: relative;
+}
+.position-servise-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.servise-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: var(--primary-letter-spacing);
+  text-transform: uppercase;
 }
 /* Секция Наша команда */
 .team {
@@ -442,14 +475,14 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--title-text-color);
 }
 .team-prof {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   margin-top: 10px;
 }
 /* Team social link */
@@ -536,7 +569,7 @@ li {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   color: var(--title-text-color);
   background-color: #f5f4fa;
   padding: 6px 22px;
@@ -582,7 +615,7 @@ li {
 .port-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-letter-spacing);
   margin-top: 4px;
 }
 .port-wraper {
