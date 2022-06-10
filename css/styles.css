@@ -85,10 +85,10 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-:hover,
+/* :hover,
 :focus {
   transition: var(--animation-transition);
-}
+} */
 
 /* Скрытый заголовок h2 */
 .visually-hidden {
@@ -161,11 +161,13 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--nohover-navlink-color);
+  transition: color var(--animation-transition);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--hover-cont-link);
+  transition: color var(--animation-transition);
 }
 .item {
   position: relative;
@@ -194,10 +196,12 @@ li {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  transition: color var(--animation-transition);
 }
 .conn-link:hover,
 .conn-link:focus {
   color: var(--hover-cont-link);
+  transition: color var(--animation-transition);
 }
 .i-email,
 .i-smart {
@@ -228,14 +232,17 @@ li {
 }
 .footer-contacts {
   color: var(--communication-color);
+  transition: color var(--animation-transition);
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--hover-cont-link);
+  transition: color var(--animation-transition);
 }
 .address-color:hover,
 .address-color:focus {
   color: var(--hover-cont-link);
+  transition: color var(--animation-transition);
 }
 .primary-fsection {
   min-width: 231px;
@@ -269,6 +276,7 @@ li {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background var(--animation-transition);
 }
 .fsocial-icon {
   fill: var(--fsocial-icon-color);
@@ -276,6 +284,7 @@ li {
 .fsocial-link:hover,
 .fsocial-link:focus {
   background: var(--fsocial-link-hover);
+  transition: background var(--animation-transition);
 }
 /* Модальное окно */
 .hero.overlay {
@@ -316,7 +325,9 @@ li {
   justify-content: center;
   width: 30px;
   height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background: transparent;
   cursor: pointer;
 }
 .modal-close {
@@ -360,17 +371,19 @@ li {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  background-color: #2196f3;
+  background: #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   color: var(--button-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: background var(--animation-transition);
 }
 .primary-button:hover,
 .primary-button:focus {
   background: #188ce8;
+  transition: background var(--animation-transition);
 }
 
 /* Секция как мы работаем*/
@@ -409,9 +422,9 @@ li {
   line-height: 1.71;
 }
 /* Секция Чем Мы занимаемся */
-.service .container {
+/* .service .container {
   text-align: center;
-}
+} */
 .service-title {
   color: var(--title-text-color);
   margin-bottom: 50px;
@@ -422,7 +435,7 @@ li {
 .service-item + .service-item {
   margin-left: 30px;
 }
-.service-item {
+.service-card {
   position: relative;
 }
 .position-servise-text {
@@ -505,12 +518,14 @@ li {
   height: 44px;
   border-radius: 50%;
   color: var(--team-social-link);
+  transition: color var(--animation-transition), background var(--animation-transition);
 }
 
 .team-link:hover,
 .team-link:focus {
-  background: var(--team-soc-bg-hover);
+  background-color: var(--team-soc-bg-hover);
   color: var(--team-social-link-hover);
+  transition: color var(--animation-transition), background var(--animation-transition);
 }
 .team-social-icon {
   fill: currentColor;
@@ -538,12 +553,14 @@ li {
   border: 1px solid var(--customers-color);
   border-radius: 4px;
   color: var(--customers-color);
+  transition: color var(--animation-transition), border var(--animation-transition);
 }
 
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--customers-hover-color);
   color: var(--customers-hover-color);
+  transition: color var(--animation-transition), border var(--animation-transition);
 }
 .customers-svg {
   width: 106px;
@@ -574,6 +591,8 @@ li {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   padding: 6px 22px;
+  transition: box-shadow var(--animation-transition), background-color var(--animation-transition),
+    color var(--animation-transition);
 }
 .btn-current {
   color: var(--button-text-color);
@@ -585,6 +604,8 @@ li {
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow var(--animation-transition), background-color var(--animation-transition),
+    color var(--animation-transition);
 }
 /* Секция Наши проекты */
 .port-list {
@@ -606,6 +627,7 @@ li {
 .port-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow var(--animation-transition);
 }
 
 .port-title {
